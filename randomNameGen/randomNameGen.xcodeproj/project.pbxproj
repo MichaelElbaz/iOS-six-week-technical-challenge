@@ -14,7 +14,7 @@
 		4C58B0711BFD1849004B2CE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C58B06F1BFD1849004B2CE6 /* LaunchScreen.storyboard */; };
 		4C58B07C1BFD184A004B2CE6 /* randomNameGenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C58B07B1BFD184A004B2CE6 /* randomNameGenTests.swift */; };
 		4C58B0871BFD184A004B2CE6 /* randomNameGenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C58B0861BFD184A004B2CE6 /* randomNameGenUITests.swift */; };
-		4C58B0951BFD1AD0004B2CE6 /* ArrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C58B0941BFD1AD0004B2CE6 /* ArrayView.swift */; };
+		4C58B0971BFD2E96004B2CE6 /* ArrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C58B0961BFD2E96004B2CE6 /* ArrayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		4C58B0821BFD184A004B2CE6 /* randomNameGenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = randomNameGenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C58B0861BFD184A004B2CE6 /* randomNameGenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomNameGenUITests.swift; sourceTree = "<group>"; };
 		4C58B0881BFD184A004B2CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C58B0941BFD1AD0004B2CE6 /* ArrayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayView.swift; sourceTree = "<group>"; };
+		4C58B0961BFD2E96004B2CE6 /* ArrayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayView.swift; path = ../ArrayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				4C58B0661BFD1849004B2CE6 /* AppDelegate.swift */,
+				4C58B0961BFD2E96004B2CE6 /* ArrayView.swift */,
 				4C58B0681BFD1849004B2CE6 /* ViewController.swift */,
-				4C58B0941BFD1AD0004B2CE6 /* ArrayView.swift */,
 				4C58B06A1BFD1849004B2CE6 /* Main.storyboard */,
 				4C58B06D1BFD1849004B2CE6 /* Assets.xcassets */,
 				4C58B06F1BFD1849004B2CE6 /* LaunchScreen.storyboard */,
@@ -260,8 +260,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C58B0691BFD1849004B2CE6 /* ViewController.swift in Sources */,
+				4C58B0971BFD2E96004B2CE6 /* ArrayView.swift in Sources */,
 				4C58B0671BFD1849004B2CE6 /* AppDelegate.swift in Sources */,
-				4C58B0951BFD1AD0004B2CE6 /* ArrayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
