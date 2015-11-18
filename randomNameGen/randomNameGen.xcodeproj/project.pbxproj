@@ -16,6 +16,7 @@
 		4C58B0871BFD184A004B2CE6 /* randomNameGenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C58B0861BFD184A004B2CE6 /* randomNameGenUITests.swift */; };
 		4C58B0971BFD2E96004B2CE6 /* ArrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C58B0961BFD2E96004B2CE6 /* ArrayView.swift */; };
 		4C58B0991BFD2EF9004B2CE6 /* ArrayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C58B0981BFD2EF9004B2CE6 /* ArrayController.swift */; };
+		4C58B09D1BFD3B75004B2CE6 /* AddNewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C58B09C1BFD3B75004B2CE6 /* AddNewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		4C58B0881BFD184A004B2CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C58B0961BFD2E96004B2CE6 /* ArrayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayView.swift; path = ../ArrayView.swift; sourceTree = "<group>"; };
 		4C58B0981BFD2EF9004B2CE6 /* ArrayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayController.swift; path = ../ArrayController.swift; sourceTree = "<group>"; };
+		4C58B09C1BFD3B75004B2CE6 /* AddNewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddNewController.swift; path = ../AddNewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				4C58B0661BFD1849004B2CE6 /* AppDelegate.swift */,
+				4C58B09C1BFD3B75004B2CE6 /* AddNewController.swift */,
 				4C58B0961BFD2E96004B2CE6 /* ArrayView.swift */,
 				4C58B0981BFD2EF9004B2CE6 /* ArrayController.swift */,
 				4C58B0681BFD1849004B2CE6 /* ViewController.swift */,
@@ -266,6 +269,7 @@
 				4C58B0971BFD2E96004B2CE6 /* ArrayView.swift in Sources */,
 				4C58B0671BFD1849004B2CE6 /* AppDelegate.swift in Sources */,
 				4C58B0991BFD2EF9004B2CE6 /* ArrayController.swift in Sources */,
+				4C58B09D1BFD3B75004B2CE6 /* AddNewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

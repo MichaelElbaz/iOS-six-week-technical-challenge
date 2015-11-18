@@ -32,6 +32,14 @@ class ViewController: UITableViewController {
         
         return cell
     }
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            let currentPerson = ArrayController.sharedInstance.people[indexPath.row]
+            ArrayController.sharedInstance.removePerson(currentPerson)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        }
+    }
+
     
     @IBAction func mixMe(sender: AnyObject) {
         ArrayController.sharedInstance.randomizePairs()
@@ -43,6 +51,23 @@ class ViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "editPerson" {
+            
+            if let indexPath = tableView.indexPathForSelectedRow {
+                
+                let person = ArrayController.sharedInstance.people[indexPath.row]
+                
+                let detailScene = segue.destinationViewController as! AddNewController
+                
+                _ = detailScene.view
+                detailScene.person = person
+                detailScene.updateButtonTitle()
+                detailScene.updateWithPerson(person)
+            }
+        }
     }
 
 

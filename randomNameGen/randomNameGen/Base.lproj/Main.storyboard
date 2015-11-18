@@ -60,11 +60,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0d-4l-CoZ">
-                                <rect key="frame" x="430" y="541" width="114" height="30"/>
+                                <rect key="frame" x="427" y="541" width="114" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Add New Names"/>
                                 <connections>
-                                    <segue destination="nXK-KP-uwU" kind="show" id="8uO-ZY-uqU"/>
+                                    <segue destination="nXK-KP-uwU" kind="showDetail" id="RJk-KZ-68V"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="1057" y="337"/>
         </scene>
-        <!--View Controller-->
+        <!--Add New Controller-->
         <scene sceneID="l4r-4F-wYi">
             <objects>
-                <viewController id="nXK-KP-uwU" sceneMemberID="viewController">
+                <viewController id="nXK-KP-uwU" customClass="AddNewController" customModule="randomNameGen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8Iy-oV-ZvA"/>
                         <viewControllerLayoutGuide type="bottom" id="TRK-q5-xZ7"/>
@@ -102,6 +102,9 @@
                                         <rect key="frame" x="20" y="294" width="560" height="30"/>
                                         <animations/>
                                         <state key="normal" title="Add Person"/>
+                                        <connections>
+                                            <action selector="addButton:" destination="nXK-KP-uwU" eventType="touchUpInside" id="cbY-fh-f2R"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
@@ -125,6 +128,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="QCG-KN-Sd7" secondAttribute="trailing" constant="-21" id="uaf-YZ-qCp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addedPerson" destination="VKO-Rk-Njc" id="Uxa-UQ-MUl"/>
+                        <outlet property="nameTextField" destination="gWi-pX-rp6" id="8If-Ae-VJZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BPx-px-6TQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
