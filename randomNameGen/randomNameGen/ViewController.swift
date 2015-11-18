@@ -20,7 +20,7 @@ class ViewController: UITableViewController {
         return 5
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+       let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         
         return cell
     }
