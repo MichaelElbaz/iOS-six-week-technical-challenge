@@ -17,17 +17,26 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        // #warning Incomplete implementation, return the number of rows
+        return ArrayController.sharedInstance.people.count
     }
+    
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-       let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("personCell", forIndexPath: indexPath)
+        
+        let currentPerson = ArrayController.sharedInstance.people[indexPath.row]
+        
+        cell.textLabel?.text = currentPerson.name
+        cell.detailTextLabel?.text = "Pair: \(currentPerson.pairNumber)"
         
         return cell
     }
     
     @IBAction func mixMe(sender: AnyObject) {
-        
-        let names = array[Int(arc4random_uniform(UInt32(array.count)))]
+        ArrayController.sharedInstance.randomizePairs()
+        tableView.reloadData()
+
     }
     
     

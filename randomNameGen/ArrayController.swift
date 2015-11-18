@@ -7,9 +7,9 @@
 //
 
 import Foundation
-class  PersonController  {
+class  ArrayController  {
     
-    static let sharedInstance = PersonController()
+    static let sharedInstance = ArrayController()
     private let kPeople = "people"
     
     var people: [ArrayView] = []
