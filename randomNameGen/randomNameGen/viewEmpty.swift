@@ -8,8 +8,11 @@
 
 import Foundation
 
-class Empty {
-    var array: Array = [""]
+class viewEmpty {
+        var array: Array = ["john", "paul", "simon", "jim", "fred", "brock"]
+        
+    
+   
     
     
 }

@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Empty-->
         <scene sceneID="RuK-Nn-SSx">
             <objects>
-                <viewController id="sk4-lP-vVc" sceneMemberID="viewController">
+                <viewController id="sk4-lP-vVc" customClass="viewEmpty" customModule="randomNameGen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rwC-sT-GRn"/>
                         <viewControllerLayoutGuide type="bottom" id="Ymu-Zb-qAO"/>
@@ -19,12 +19,6 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dLa-IO-ZyK">
                                 <rect key="frame" x="20" y="51" width="97" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Pf-R2-Y4Z">
-                                <rect key="frame" x="20" y="126" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -108,7 +102,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OO5-iN-OHX">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OO5-iN-OHX" customClass="viewEmpty">
                                 <rect key="frame" x="401" y="285" width="123" height="77"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="0.0047998788779999996" blue="0.1243726778" alpha="1" colorSpace="calibratedRGB"/>
@@ -119,6 +113,12 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="Slo-Em-QLU"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Pf-R2-Y4Z">
+                                <rect key="frame" x="20" y="126" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -161,6 +161,9 @@
                                 <rect key="frame" x="273" y="535" width="54" height="30"/>
                                 <animations/>
                                 <state key="normal" title="mix me "/>
+                                <connections>
+                                    <action selector="mixMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bmm-Df-vIw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>

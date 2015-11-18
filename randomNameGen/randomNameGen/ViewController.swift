@@ -22,8 +22,14 @@ class ViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         
-        return Cell
+        return cell
     }
+    
+    @IBAction func mixMe(sender: AnyObject) {
+        
+        let names = array[Int(arc4random_uniform(UInt32(array.count)))]
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
