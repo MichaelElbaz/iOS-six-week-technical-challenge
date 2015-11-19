@@ -38,7 +38,7 @@ class AddNewController: UIViewController {
         if self.person != nil {
             self.addedPerson.setTitle("Updated name ", forState: .Normal)
         } else {
-            self.addedPerson.setTitle("Added Name", forState: .Normal)
+            self.addedPerson.setTitle("Add Name", forState: .Normal)
         }
     }
     
@@ -52,7 +52,7 @@ class AddNewController: UIViewController {
         if self.person != nil {
             self.addedPerson.setTitle("Updated Name", forState: .Normal)
         } else {
-            self.addedPerson.setTitle("Added Name", forState: .Normal)
+            self.addedPerson.setTitle("Add Name", forState: .Normal)
         }
     }
     
