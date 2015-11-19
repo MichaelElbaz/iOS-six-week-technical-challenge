@@ -13,7 +13,7 @@ class AddNewController: UIViewController {
 
     var person: ArrayView?
     
-    @IBOutlet weak var addedPerson: UIButton!
+    @IBOutlet weak var addPerson: UIButton!
     
     @IBOutlet weak var nameTextField: UITextField!
     
@@ -36,9 +36,9 @@ class AddNewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         if self.person != nil {
-            self.addedPerson.setTitle("Updated name ", forState: .Normal)
+            self.addPerson.setTitle("Updated name ", forState: .Normal)
         } else {
-            self.addedPerson.setTitle("Added Name", forState: .Normal)
+            self.addPerson.setTitle("Added Name", forState: .Normal)
         }
     }
     
@@ -50,9 +50,9 @@ class AddNewController: UIViewController {
     
     func updateButtonTitle() {
         if self.person != nil {
-            self.addedPerson.setTitle("Updated Name", forState: .Normal)
+            self.addPerson.setTitle("Updated Name", forState: .Normal)
         } else {
-            self.addedPerson.setTitle("Added Name", forState: .Normal)
+            self.addPerson.setTitle("Added Name", forState: .Normal)
         }
     }
     
